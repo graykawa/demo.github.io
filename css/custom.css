@@ -1,4 +1,4 @@
-@import "//at.alicdn.com/t/c/font_3837294_pb3kxq6le5h.css";
+@import "//at.alicdn.com/t/c/font_3837294_6uon0mxlcbn.css";
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -172,7 +172,7 @@ div#archive {
 
 @font-face {
   /* 为载入的字体取名字(随意) */
-  font-family: 'YSHST';	
+  font-family: 'XWWK';	
   /* 字体文件地址(相对或者绝对路径都可以) */
   src: url(/font/LXGWWenKaiMonoGB-Bold.ttf);
   /* 定义加粗样式(加粗多少) */
@@ -181,6 +181,19 @@ div#archive {
   font-style: normal;
   /* 定义显示样式 */
   font-display: block;
+}
+
+@font-face{
+    /* 为载入的字体取名字(随意) */
+    font-family: 'YSHST';	
+    /* 字体文件地址(相对或者绝对路径都可以) */
+    src: url(/font/优设好身体.ttf); 
+    /* 定义加粗样式(加粗多少) */
+    font-weight: normal;
+    /* 定义字体样式(斜体/非斜体) */
+    font-style: normal;
+    /* 定义显示样式 */
+    font-display: block;
 }
 
 /*文章双侧栏显示BUG*/
