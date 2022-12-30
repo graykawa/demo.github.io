@@ -176,11 +176,11 @@ function createWinbox() {
     </span>
     <h2 id="字体">字体</h2>
     <div id="allFont" class="content" style="display:flex;flex-wrap: wrap;">
-        <div id="XWWK" style="height:60px;font-family:'XWWK';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;${fs == 'XWWK' ? 'background-color:'+tc : ''}" onclick="fontListener('XWWK')">霞鹜文楷</div>
-        <div id="YSHST" style="height:60px;font-family:'YSHST';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;${fs == 'YSHST' ? 'background-color:'+tc : ''}" onclick="fontListener('YSHST')">优设好身体</div>
-        <div id="HYTMR" style="height:60px;font-family:'HYTMR';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;${fs == 'HYTMR' ? 'background-color:'+tc : ''}" onclick="fontListener('HYTMR')">汉仪唐美人</div>
-        <div id="DYZMT" style="height:60px;font-family:'DYZMT';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;${fs == 'DYZMT' ? 'background-color:'+tc : ''}" onclick="fontListener('DYZMT')">电影字幕体</div>
-        <div id="JXZK" style="height:60px;font-family:'JXZK';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;${fs == 'JXZK' ? 'background-color:'+tc : ''}" onclick="fontListener('JXZK')">江西拙楷</div>
+        <div id="XWWK" style="height:60px;font-family:'XWWK';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'XWWK' ? 'background-color:'+tc : ''}" onclick="fontListener('XWWK')">霞鹜文楷</div>
+        <div id="YSHST" style="height:60px;font-family:'YSHST';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'YSHST' ? 'background-color:'+tc : ''}" onclick="fontListener('YSHST')">优设好身体</div>
+        <div id="HYTMR" style="height:60px;font-family:'HYTMR';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'HYTMR' ? 'background-color:'+tc : ''}" onclick="fontListener('HYTMR')">汉仪唐美人</div>
+        <div id="DYZMT" style="height:60px;font-family:'DYZMT';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'DYZMT' ? 'background-color:'+tc : ''}" onclick="fontListener('DYZMT')">电影字幕体</div>
+        <div id="JXZK" style="height:60px;font-family:'JXZK';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'JXZK' ? 'background-color:'+tc : ''}" onclick="fontListener('JXZK')">江西拙楷</div>
     </div>
     <h2 id="图片（手机）">图片（手机）</h2>
     <divclass="content" style="display:flex;flex-wrap: wrap;">
