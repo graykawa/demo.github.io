@@ -62,6 +62,9 @@ function fontListener(n){
     rect.style.backgroundColor = loadData('themeColor',1440)
     changeFont(n,0)
 }
+if(localStorage.getItem('themeColor')==null){
+    saveData('themeColor','#49B1F5')
+}
 //读取主题色
 try {
     let data = loadData('themeColor', 1440)
@@ -77,6 +80,9 @@ function changeCol(c,flag){
     if (!flag) { saveData('themeColor', c) }
 
 }
+if(localStorage.getItem('opacity')==null){
+    saveData('opacity',100)
+}
 //读取透明度
 try {
     let data = loadData('opacity', 1440)
@@ -90,7 +96,6 @@ try {
 //设置透明度
 function changeOpa(c,flag){
     document.body.style.opacity = parseInt(c) / 100.0
-    console.log("flag:" + flag)
     if (!flag){
          saveData('opacity', c)
     }
