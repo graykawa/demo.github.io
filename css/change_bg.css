@@ -214,22 +214,22 @@ input[name="colors"]{
     border-radius: 50%;
 }
 #red{
-    border: 3px solid var(--lyx-red);
+    border: 3px solid 	#FF6347;
 }
 #orange{
-    border: 3px solid var(--lyx-orange);
+    border: 3px solid #FFA500;
 }
 #yellow{
-    border: 3px solid var(--lyx-yellow);
+    border: 3px solid 	#FFD700;
 }
 #green{
-    border: 3px solid var(--lyx-green);
+    border: 3px solid 	#00FA9A;
 }
 #blue{
     border: 3px solid #49B1F5;
 }
 #purple{
-    border: 3px solid var(--lyx-purple);
+    border: 3px solid 	#DA70D6;
 }
 #pink{
     border: 3px solid #FFC0CB;
@@ -249,32 +249,32 @@ input[name="colors"]{
 #purple:checked{
     box-shadow: 0 0 0 2px #fff inset;
     border-radius: 50%;
-    border: 3px solid var(--lyx-purple);
-    background-color: var(--lyx-purple);
+    border: 3px solid 	#DA70D6;
+    background-color: 	#DA70D6;
 }
 #red:checked{
     box-shadow: 0 0 0 2px #fff inset;
     border-radius: 50%;
-    border: 3px solid var(--lyx-red);
-    background-color: var(--lyx-red);
+    border: 3px solid 	#FF6347;
+    background-color: 	#FF6347;
 }
 #orange:checked{
     box-shadow: 0 0 0 2px #fff inset;
     border-radius: 50%;
-    border: 3px solid var(--lyx-orange);
-    background-color: var(--lyx-orange);
+    border: 3px solid #FFA500;
+    background-color: #FFA500;
 }
 #yellow:checked{
     box-shadow: 0 0 0 2px #fff inset;
     border-radius: 50%;
-    border: 3px solid var(--lyx-yellow);
-    background-color: var(--lyx-yellow);
+    border: 3px solid 	#FFD700;
+    background-color: 	#FFD700;
 }
 #green:checked{
     box-shadow: 0 0 0 2px #fff inset;
     border-radius: 50%;
-    border: 3px solid var(--lyx-green);
-    background-color: var(--lyx-green);
+    border: 3px solid 		#00FA9A;
+    background-color: 		#00FA9A;
 }
 #blue:checked{
     box-shadow: 0 0 0 2px #fff inset;
