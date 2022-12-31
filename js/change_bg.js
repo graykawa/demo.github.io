@@ -1,3 +1,4 @@
+
 // 存数据
 // name：命名 data：数据
 function saveData(name, data) {
@@ -110,21 +111,49 @@ function opacityListener(){
 //初始化樱花特效
 if(localStorage.getItem('sakura')==null){
     localStorage.setItem('sakura','true')
+}else{
+    let isSakura = localStorage.getItem('sakura')
+    if(isSakura == "true") changeSakura("false")
+    else changeSakura("true")
 }
-
-function changeSakura(sakura){
-    if(sakura == "true"){
+function changeSakura(isSakura){
+    if(isSakura == "true"){
         stopp(0)
-        localStorage.setItem('sakura','false')
+        localStorage.setItem('sakura','false');
     }else{
         stopp(1);
-        localStorage.setItem('sakura','true')
+        localStorage.setItem('sakura','true');
     }
 }
 function sakuraListener(){
     let isSakura = localStorage.getItem('sakura')
     changeSakura(isSakura);
     document.getElementById('sakuraBtn').innerText = '樱花特效:['+ (isSakura == "true" ? '关' : '开') +']'
+}
+//初始化霓虹灯
+if(localStorage.getItem('starry')==null){
+    localStorage.setItem('starry','true')
+}else{
+    let isStarry = localStorage.getItem('starry')
+    if(isStarry == "true") changeStarry("false")
+    else changeStarry("true")
+}
+function changeStarry(isStarry){
+    if(isStarry == "true"){
+        let u = document.getElementById('universe')
+        u.style.display = "none"
+        localStorage.setItem('starry','false')
+    }else{
+        let u = document.getElementById('universe')
+        u.style.display = ""
+        dark();
+        localStorage.setItem('starry','true')
+    }
+}
+function starryListener(){
+    let isStarry = localStorage.getItem('starry')
+    changeStarry(isStarry);
+    document.getElementById('starryBtn').innerText = '星空背景:['+ (isStarry == "true" ? '关' : '开') +']'
 }
 
 // 以下为2.0新增内容
@@ -138,7 +167,7 @@ function createWinbox() {
     winbox = WinBox({
         id: 'changeBgBox',
         index: 999,
-        title: "切换背景",
+        title: "美化面板",
         x: "center",
         y: "center",
         minwidth: '300px',
@@ -152,15 +181,16 @@ function createWinbox() {
     let tc = loadData("themeColor",1440)
     let fs = loadData('font',1440)
     let isSakura =  localStorage.getItem('sakura')
-    console.log(isSakura)
+    let isStarry = localStorage.getItem('starry')
     // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
     winbox.body.innerHTML = `
     <div id="article-container" style="padding:10px;">
     
-    <p><button onclick="localStorage.removeItem('blogbg');localStorage.removeItem('font');localStorage.removeItem('themeColor');location.reload();" style="background:var(--lyx-theme);display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
+    <p><button onclick="localStorage.removeItem('blogbg');localStorage.removeItem('font');localStorage.removeItem('themeColor');localStorage.removeItem('opacity');localStorage.removeItem('sakura');location.reload();" style="background:var(--lyx-theme);display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认设置</button></p>
     <h2 id="特效">特效</h2>
-        <div>
-            <div id="sakuraBtn" style="width:120px;height:30px;line-height:30px;background-color:pink;text-align:center;font-size:16px;border-radius:2px 2px 2px 2px;" onclick="sakuraListener()"/>樱花特效:[${isSakura == 'true' ? '开' : '关'}]</div>
+        <div class="content" style="display:flex;flex-wrap: wrap;">
+            <div id="sakuraBtn" style="width:120px;height:30px;line-height:30px;background-color:var(--lyx-theme);text-align:center;font-size:16px;border-radius:2px 2px 2px 2px;margin-right:3%;" onclick="sakuraListener()"/>落樱特效:[${isSakura == 'true' ? '开' : '关'}]</div>
+            <div id="starryBtn" style="width:120px;height:30px;line-height:30px;background-color:var(--lyx-theme);text-align:center;font-size:16px;border-radius:2px 2px 2px 2px;margin-right:3%;" onclick="starryListener()"/>星空背景:[${isStarry == 'true' ? '开' : '关'}]</div>
         </div>
     <h2 id="透明度">透明度(0% ~ 100%) ${loadData("opacity",1440)}%</h2>
     <input id="opacity" type="range" min="1" max="100" step="1" value="${loadData("opacity",1440)}" onmouseup="opacityListener()"/>
@@ -183,7 +213,7 @@ function createWinbox() {
         <div id="JXZK" style="height:60px;font-family:'JXZK';text-align:center;line-height:60px;font-size:19px;border-radius:3px 3px 3px 3px;border:1px solid var(--lyx-theme);margin-left:1%;margin-top:2px;${fs == 'JXZK' ? 'background-color:'+tc : ''}" onclick="fontListener('JXZK')">江西拙楷</div>
     </div>
     <h2 id="图片（手机）">图片（手机）</h2>
-    <divclass="content" style="display:flex;flex-wrap: wrap;">
+    <div class="content" style="display:flex;flex-wrap: wrap;">
         <div class="bgbox">
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://gray-read.oss-cn-shanghai.aliyuncs.com/hexo-demo/cover/phone/bz1.jpg)" class="pimgbox" onclick="changeBg('url(https://gray-read.oss-cn-shanghai.aliyuncs.com/hexo-demo/cover/phone/bz1.jpg)')"></a>
         </div>

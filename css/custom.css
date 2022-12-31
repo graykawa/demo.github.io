@@ -1,8 +1,8 @@
-@import "//at.alicdn.com/t/c/font_3837294_6uon0mxlcbn.css";
+@import "//at.alicdn.com/t/c/font_3837294_z4j7gzdchf.css";
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 1.5em;
+  font-size: 2em;
   /* 可以定义图标大小 */
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -66,9 +66,9 @@ div#archive {
   border-radius: 20px;
 }
 
-/* 导航栏 */
+/* 导航栏rgba(255, 255, 255, 0.75); */
 #page-header.nav-fixed #nav {
-  background: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(to right, #FFDEE9, #B5FFFC);
   backdrop-filter: var(--backdrop-filter);
 }
 

@@ -160,5 +160,5 @@ function stopp(e) {
         startSakura();
     }
 }
-window.addEventListener("DOMContentLoaded",
-startSakura);
+// window.addEventListener("DOMContentLoaded",
+// startSakura);
