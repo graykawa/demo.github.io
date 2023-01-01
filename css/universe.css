@@ -1,6 +1,5 @@
 /* 背景宇宙星光  */
 #universe{
-    display: block;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -13,4 +12,5 @@
     pointer-events: none;
     /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
     z-index: -1;
+    display:
   }

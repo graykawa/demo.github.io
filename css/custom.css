@@ -1,5 +1,4 @@
-@import "//at.alicdn.com/t/c/font_3837294_z4j7gzdchf.css";
-
+@import "//at.alicdn.com/t/c/font_3837294_ows9oz9uyyc.css";
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 2em;
@@ -49,11 +48,24 @@
 }
 
 /* 首页侧栏卡片 */
-#aside-content .card-widget {
+/* #aside-content .card-widget {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
   border-radius: 18px;
   border: var(--border-style);
+} */
+/* 个人信息卡片背景图 */
+[data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
 }
 
 /* 文章页、归档页、普通页面 */
@@ -168,72 +180,6 @@ div#archive {
     top: 0;
   }
 
-/*字体*/
-
-@font-face {
-  /* 为载入的字体取名字(随意) */
-  font-family: 'XWWK';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/LXGWWenKaiMonoGB-Bold.ttf);
-  /* 定义加粗样式(加粗多少) */
-  font-weight: normal;
-  /* 定义字体样式(斜体/非斜体) */
-  font-style: normal;
-  /* 定义显示样式 */
-  font-display: block;
-}
-
-@font-face{
-    /* 为载入的字体取名字(随意) */
-    font-family: 'YSHST';	
-    /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/优设好身体.ttf); 
-    /* 定义加粗样式(加粗多少) */
-    font-weight: normal;
-    /* 定义字体样式(斜体/非斜体) */
-    font-style: normal;
-    /* 定义显示样式 */
-    font-display: block;
-}
-
-@font-face{
-  /* 为载入的字体取名字(随意) */
-  font-family: 'HYTMR';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/HYTangMeiRen65W.ttf); 
-  /* 定义加粗样式(加粗多少) */
-  font-weight: normal;
-  /* 定义字体样式(斜体/非斜体) */
-  font-style: normal;
-  /* 定义显示样式 */
-  font-display: block;
-}
-
-@font-face{
-  /* 为载入的字体取名字(随意) */
-  font-family: 'DYZMT';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/cinecaption227.ttf); 
-  /* 定义加粗样式(加粗多少) */
-  font-weight: normal;
-  /* 定义字体样式(斜体/非斜体) */
-  font-style: normal;
-  /* 定义显示样式 */
-  font-display: block;
-}
-
-@font-face{
-  /* 为载入的字体取名字(随意) */
-  font-family: 'JXZK';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/江西拙楷2.0.ttf); 
-  /* 定义加粗样式(加粗多少) */
-  font-weight: normal;
-  /* 定义字体样式(斜体/非斜体) */
-  font-style: normal;
-  /* 定义显示样式 */
-  font-display: block;
-}
 
 /*文章双侧栏显示BUG*/
 /* 翻页按钮居中 */
@@ -274,7 +220,7 @@ div#archive {
 
 /**个人卡片渐变色**/
 /* 侧边栏个人信息卡片动态渐变色 */
-#aside-content > .card-widget.card-info {
+/* #aside-content > .card-widget.card-info {
   background: linear-gradient(
     -45deg,
     #e8d8b9,
@@ -325,13 +271,13 @@ div#archive {
 }
 
 /* 黑夜模式适配 */
-[data-theme="dark"] #aside-content > .card-widget.card-info {
+/* [data-theme="dark"] #aside-content > .card-widget.card-info {
   background: #191919ee;
-}
+}  */
 
 /* 个人信息Follow me按钮 */
 #aside-content > .card-widget.card-info > #card-info-btn {
-  background-color: #3eb8be;
+  background-color: var(--theme-color);
   border-radius: 8px;
 }
 
@@ -425,3 +371,176 @@ h6::before {
   animation: ccc 6s linear infinite;
 }
 
+
+/* 随便逛逛*/
+#random{
+  width:100%!important;
+  height:200px;
+  line-height:100px;
+  background-color: var(--lyx-white-acrylic1)!important;
+  border-radius: 18px;
+  margin-right: 10px !important;
+  font-family: var(--global-font),PingFang,微软雅黑,HYTMR,SimSun;
+  background-size:cover;
+  color:var(--lyx-white);
+  font-size:32px; /*觉得小可以开大一点*/
+  position: relative;
+  text-align: center;
+}
+#random-banner{
+  width:100%!important;
+  height:100%!important;
+  border-radius:8px;
+}
+#random-hover{
+  position:absolute;
+  right:0%;
+  height:100%!important;
+  color:var(--lyx-0);
+  border-radius: 8px;
+}
+#random-hover:hover{
+ color:#ffffff;
+ background-color: #425aefdd;
+ backdrop-filter: blur(10px) saturate(180%);
+ -webkit-backdrop-filter: blur(10px) saturate(180%);
+}
+
+/*进入网站时加载头像 */
+.loading-img {
+  background: url(https://gray-read.oss-cn-shanghai.aliyuncs.com/hexo-demo/cover/bochi.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*文章顶部波浪*/
+/* 波浪css */
+.main-hero-waves-area {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  z-index: 5;
+}
+.waves-area .waves-svg {
+  width: 100%;
+  height: 5rem;
+}
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: #f7f9febd;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: #f7f9fe82;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: #f7f9fe36;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: var(--theme-color);
+}
+/* 黑色模式背景 */
+[data-theme="dark"] .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: #18171dc8;
+}
+[data-theme="dark"] .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: #18171d80;
+}
+[data-theme="dark"] .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: #18171d3e;
+}
+[data-theme="dark"] .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: var(--theme-color);
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves-area .waves-svg {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+/*帧率显示*/
+/* 帧率检测 */
+#fps {
+  position: fixed;
+  /* 指定位置 */
+  left: 10px;
+  bottom: 10px;
+  z-index: 1919810;
+}
+[data-theme="light"] #fps {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: var(--backdrop-filter);
+  padding: 4px;
+  border-radius: 4px;
+}
+[data-theme="dark"] #fps {
+  background-color: rgba(0, 0, 0, 0.72);
+  backdrop-filter: var(--backdrop-filter);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/**滚动条样式**/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(--theme-color);
+}
