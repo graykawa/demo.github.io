@@ -32,7 +32,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'XWWK';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/LXGWWenKaiMonoGB-Bold.ttf);
+    src: url(/font/woff2/LXGWWenKaiMonoGB-Bold.woff2);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -45,7 +45,7 @@
       /* 为载入的字体取名字(随意) */
       font-family: 'YSHST';	
       /* 字体文件地址(相对或者绝对路径都可以) */
-      src: url(/font/优设好身体.ttf); 
+      src: url(/font/woff2/优设好身体.woff2); 
       /* 定义加粗样式(加粗多少) */
       font-weight: normal;
       /* 定义字体样式(斜体/非斜体) */
@@ -58,7 +58,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'HYTMR';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/HYTangMeiRen65W.ttf); 
+    src: url(/font/woff2/HYTangMeiRen65W.woff2); 
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -71,7 +71,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'DYZMT';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/cinecaption227.ttf); 
+    src: url(/font/woff2/cinecaption227.woff2); 
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -84,7 +84,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'JXZK';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/江西拙楷2.0.ttf); 
+    src: url(/font/woff2/江西拙楷2.0.woff2); 
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
