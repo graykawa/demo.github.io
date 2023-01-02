@@ -431,7 +431,6 @@ if (localStorage.getItem("reset_2") == undefined) {
   </div>
   
   <h2>二、字体设置</h2>
-  {% note warning modern %}非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方{% endnote %}
   <p id="swfs">
   <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
   <a class="swf" id="XWWK" href="javascript:;" rel="noopener external nofollow" style="font-family:'XWWK'!important;color:black" onclick="setFont('XWWK')">霞鹜文楷</a>
