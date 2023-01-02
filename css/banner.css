@@ -227,9 +227,14 @@ a.category_button:after {
     color: var(--mj-fontcolor) !important;
     transition: 0;
 }
+[data-theme="dark"] .post_info {
+  background-color: var(--trans-dark) !important;
+}
+
 .top_post_group .top_post_item:hover .post_info a{
     color: var(--mj-white) !important;
 }
+
 .top_post_group .top_post_item .post_info {
     padding: .2rem .5rem .3rem .5rem!important;
     transition: .3s;
