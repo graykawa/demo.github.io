@@ -73,6 +73,7 @@ if (localStorage.getItem("reset_2") == undefined) {
   function setColor(c) {
     document.getElementById("themeColor").innerText = `:root{--theme-color:var(--color-` + c + `) !important}`;
     localStorage.setItem("themeColor", c);
+    
     // 刷新鼠标颜色
     try{
         CURSOR.refresh();
