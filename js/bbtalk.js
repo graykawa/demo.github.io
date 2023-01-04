@@ -1,4 +1,4 @@
-let jsonUrl = 'talk.code-gray.com/api/ispeak?author=63b1b37c7de676cd7c235446&page=' // 在这修改api
+let jsonUrl = 'https://talk.code-gray.com/api/ispeak?author=63b1b37c7de676cd7c235446' // 在这修改api
 
 document.getElementById('bber-talk').addEventListener('click', () => {
     window.location.pathname = '/bb/' // 在这修改你的哔哔页面地址

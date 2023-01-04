@@ -67,7 +67,7 @@ if (localStorage.getItem("reset_2") == undefined) {
   
   // 设置主题色
   if (localStorage.getItem("themeColor") == undefined) {
-    localStorage.setItem("themeColor", "blue");
+    localStorage.setItem("themeColor", "red");
   }
   setColor(localStorage.getItem("themeColor"));
   function setColor(c) {
@@ -582,7 +582,7 @@ if (localStorage.getItem("reset_2") == undefined) {
 
   <h2>自定义背景</h2>
   <p><center>
-  <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.fomal.cc/img/home_bg.webp">
+  <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://www.code-gray.com/img/haha.png">
   </center></p>
   <p><center>
   <button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
