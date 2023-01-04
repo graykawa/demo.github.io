@@ -11,6 +11,7 @@ function getbbdata(){
     if (httpRequest.readyState == 4 && httpRequest.status == 200) {
         var json = httpRequest.responseText;//获取到json字符串，还需解析
         var obj = eval('(' + json + ')');
+        console.log("data"+obj.data)
         // console.log(obj.data)
         const bbArray = obj.data.map(e => {
         return {
