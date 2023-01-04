@@ -7,8 +7,9 @@
 
 #bber-talk {
     cursor: pointer;
-    width: 100%;
-    min-height: 50px;
+    width: 97%;
+    /* min-height: 50px; */
+    max-height: 30px;
     background: var(--card-bg);
     padding: 0.5rem 1rem;
     border-radius: 14px;
