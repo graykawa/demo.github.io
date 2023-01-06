@@ -6,10 +6,10 @@ document.onkeydown = function(e) {
     var keyCode = e.keyCode || e.which || e.charCode;
     var ctrlKey = e.ctrlKey || e.metaKey;
     if(ctrlKey && keyCode == 67) {
-        Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功',duration: '1800'});
+        Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功,转载请标注原文地址',duration: '1800'});
     }
-    e.preventDefault();
-    return false;
+    // e.preventDefault();
+    // return true;
 }
 
 function setMask(){//设置遮罩层
@@ -96,7 +96,7 @@ rmf.yinyong=function(){
     console.log(getSelection().toString());
     document.getElementsByClassName("el-textarea__inner")[0].value="> "+getSelection().toString()+"\n\n";
     Snackbar.show({
-        text: '为保证最佳评论阅读体验，建议不要删除空行',
+        text: '为保证阅读体验，请别删除空行',
         pos: 'top-center',
         showAction: false,
         duration:'1800'
@@ -143,9 +143,9 @@ rmf.switchReadMode = function () {
 
 //复制选中文字
 rmf.copySelect = function () {
-    document.execCommand('复制成功', false, null);
+    document.execCommand('复制成功，转载请标注原文地址', false, null);
     //这里可以写点东西提示一下 已复制
-    Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功',duration: '1800'});
+    Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功，转载请标注原文地址',duration: '1800'});
 }
 
 //回到顶部

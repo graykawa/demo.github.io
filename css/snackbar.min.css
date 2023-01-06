@@ -27,10 +27,10 @@
 }
 .snackbar-process p{
     position: fixed;
-    left:30%;
-    font-family: var(--global-font),'aqqxs', sans-serif !important; /* snackbar弹窗 */
-    text-align: center;
-    font-size: 20px;
+    left:5%;
+    font-family: 'aqqxs', sans-serif !important; /* snackbar弹窗 */
+    font-weight: bold;
+    font-size: 18px;
     line-height: 20px;
 }
 @-webkit-keyframes load{
