@@ -1,5 +1,17 @@
 //22.12.8 update：add mask
 //22.12.9 update: add search in this page
+
+//监听ctrl + c
+document.onkeydown = function(e) {
+    var keyCode = e.keyCode || e.which || e.charCode;
+    var ctrlKey = e.ctrlKey || e.metaKey;
+    if(ctrlKey && keyCode == 67) {
+        Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功',duration: '1800'});
+    }
+    e.preventDefault();
+    return false;
+}
+
 function setMask(){//设置遮罩层
     if(document.getElementsByClassName("rmMask")[0]!=undefined){
         return document.getElementsByClassName("rmMask")[0];
@@ -87,6 +99,7 @@ rmf.yinyong=function(){
         text: '为保证最佳评论阅读体验，建议不要删除空行',
         pos: 'top-center',
         showAction: false,
+        duration:'1800'
     })
 }
 rmf.copyWordsLink = function () {
@@ -97,11 +110,19 @@ rmf.copyWordsLink = function () {
     txa.select();
     document.execCommand("Copy");
     document.body.removeChild(txa);
-    Snackbar.show({
-        text: '链接复制成功！快去分享吧！',
-        pos: 'top-right',
-        showAction: false
-    });
+    new Vue({
+        data: function () {
+            this.$notify({
+                title: "成功复制分享信息🎉",
+                message: "您现在可以通过粘贴直接跟小伙伴分享了！",
+                position: 'top-left',
+                offset: 50,
+                showClose: true,
+                type: "success", 
+                duration: 5000
+            });
+        }
+    })
 }
 rmf.switchReadMode = function () {
     const $body = document.body
@@ -122,8 +143,9 @@ rmf.switchReadMode = function () {
 
 //复制选中文字
 rmf.copySelect = function () {
-    document.execCommand('Copy', false, null);
+    document.execCommand('复制成功', false, null);
     //这里可以写点东西提示一下 已复制
+    Snackbar.show({showAction:false,pos: 'top-center',text: '复制成功',duration: '1800'});
 }
 
 //回到顶部
@@ -243,6 +265,7 @@ function popupMenu() {
                                 text: '请允许读取剪贴板！',
                                 pos: 'top-center',
                                 showAction: false,
+                                duration: '1800'
                             })
                         }
                     })

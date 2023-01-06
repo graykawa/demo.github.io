@@ -1,0 +1,122 @@
+.snackbar-container {
+    min-width:100%;
+    background: var(--theme-color) !important;/* 弹窗颜色 */
+    transition: all .5s ease;
+    transition-property: top,right,bottom,left,opacity;
+    max-height: 52px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--theme-color);
+    /* padding: 18px 24px; */
+    bottom: -100px;
+    top: -100px;
+    opacity: 0;
+    z-index: 9999
+}
+
+.snackbar-process{
+    display: inline-block;
+    width: 100%;
+    min-height: 52px;
+    /* background-size: 60px 40px; */
+    -webkit-animation:load 1.6s ease-in;
+    border-radius: 10px;
+    background:linear-gradient(to right, #FFDEE9, #B5FFFC);
+}
+.snackbar-process p{
+    position: fixed;
+    left:30%;
+    font-family: var(--global-font),'aqqxs', sans-serif !important; /* snackbar弹窗 */
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+@-webkit-keyframes load{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+.snackbar-container .action {
+    background: inherit;
+    display: inline-block;
+    border: none;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: #4caf50;
+    margin: 0 0 0 24px;
+    padding: 0;
+    min-width: min-content;
+    cursor: pointer
+}
+
+@media (min-width: 640px) {
+    .snackbar-container {
+        min-width:288px;
+        max-width: 568px;
+        display: inline-flex;
+        border-radius: 2px;
+        margin: 24px
+    }
+}
+
+@media (max-width: 640px) {
+    .snackbar-container {
+        left:0;
+        right: 0;
+        width: 100%
+    }
+}
+
+.snackbar-pos.bottom-center {
+    top: auto!important;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0)
+}
+
+.snackbar-pos.bottom-left {
+    top: auto!important;
+    bottom: 0;
+    left: 0
+}
+
+.snackbar-pos.bottom-right {
+    top: auto!important;
+    bottom: 0;
+    right: 0
+}
+
+.snackbar-pos.top-left {
+    bottom: auto!important;
+    top: 0;
+    left: 0
+}
+
+.snackbar-pos.top-center {
+    bottom: auto!important;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0)
+}
+
+.snackbar-pos.top-right {
+    bottom: auto!important;
+    top: 0;
+    right: 0
+}
+
+@media (max-width: 640px) {
+    .snackbar-pos.bottom-center,.snackbar-pos.top-center {
+        left:0;
+        transform: none
+    }
+}
+.snackbar-pos {
+border-radius: 10px !important;/* 弹窗圆角 */
+}

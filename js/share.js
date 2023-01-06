@@ -4,8 +4,8 @@ function share_() {
     try {
         // 截取标题
         var title = document.title;
-        var subTitle = title.endsWith("| code-gray🥝") ? title.substring(0, title.length - 14) : title;
-        navigator.clipboard.writeText('code-gray🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+        var subTitle = title.endsWith("| code-gray🍊") ? title.substring(0, title.length - 14) : title;
+        navigator.clipboard.writeText('code-gray🍊的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
         new Vue({
             data: function () {
                 this.$notify({
